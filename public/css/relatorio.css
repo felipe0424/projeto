@@ -1,87 +1,76 @@
-/* Reset básico para margin e padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #1E1E1E; /* Cor de fundo escura */
-  color: #E0E0E0; /* Texto claro */
+  background-color: #1E1E1E;
+  color: #E0E0E0;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
 }
 
-/* Estilo do cabeçalho */
 header {
-  background-color: #007BFF; /* Azul */
+  background-color: #007BFF;
   padding: 20px;
   margin-bottom: 50px;
   text-align: center;
   /* border-bottom: 10px solid #0056b3; */
-  width: 100%; /* Para ocupar a largura total */
-  position: fixed; /* Para manter o cabeçalho fixo */
-  top: 0; /* Para posicionar no topo */
-  left: 0; /* Para posicionar à esquerda */
-  z-index: 1000; /* Para garantir que fique acima de outros elementos */
+  width: 100%; 
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 1000; 
 }
 
-/* Para evitar sobreposição do conteúdo pelo cabeçalho */
 main {
-  margin-top: 150px; /* Ajuste conforme a altura do cabeçalho */
-  width: 100%; /* Para que o main ocupe a largura total */
+  margin-top: 150px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centraliza horizontalmente */
+  align-items: center; 
 }
 
-/* Container das transações */
 .transaction-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px; /* Espaçamento entre o cabeçalho e as transações */
-
+  margin-top: 20px;
   gap: 2rem;
   max-width: 1280px;
 }
 
-/* Estilo da tabela */
 table {
-  width: 100%; /* Tabela ocupa toda a largura do container */
-  border-collapse: collapse; /* Remove espaço entre as células */
-  background-color: #2A2A2A; /* Cor de fundo da tabela */
-  border-radius: 8px; /* Bordas arredondadas */
-  margin-bottom: 20px; /* Espaçamento abaixo da tabela */
+  width: 100%; 
+  border-collapse: collapse; 
+  background-color: #2A2A2A; 
+  border-radius: 8px;
+  margin-bottom: 20px; 
   border-radius: 1rem;
   overflow: hidden;
 }
 
-/* Estilo para as células da tabela */
 th, td {
   padding: 10px;
-  text-align: left; /* Alinhamento à esquerda */
-  border-bottom: 1px solid #444; /* Borda entre as linhas */
+  text-align: left;
+  border-bottom: 1px solid #444; 
 }
 
-/* Estilo para os títulos da tabela */
 th {
-  background-color: #007BFF; /* Fundo azul para os títulos */
-  color: white; /* Texto branco */
+  background-color: #007BFF;
+  color: white; 
   border-radius: 0;
 }
 
-/* Espaço entre as linhas da tabela */
 tr:hover {
-  background-color: #1A1A1A; /* Fundo escuro ao passar o mouse */
+  background-color: #1A1A1A;
 }
 
-/* Botões de exclusão */
 .transaction-column button {
-  background-color: #FF4C4C; /* Vermelho */
+  background-color: #FF4C4C;
   color: white;
   border: none;
   padding: 5px 5px;
@@ -92,12 +81,16 @@ tr:hover {
 }
 
 .transaction-column button:hover {
-  background-color: #FF1E1E; /* Vermelho mais escuro */
+  background-color: #FF1E1E;
 }
 
-/* Total */
 .total {
   text-align: center;
   margin-top: 20px;
   font-size: 1.5em;
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
 }
