@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1E1E1E;
+  font-family: "Lato", sans-serif;
+  /* background-color: #1E1E1E; */
   color: #E0E0E0;
   line-height: 1.6;
   display: flex;
@@ -14,20 +14,47 @@ body {
 }
 
 header {
-  background-color: #007BFF;
+  background: linear-gradient(90deg, #09090A 0%, #181719 47.57%, #36343B 126.85%, #39363D 126.85%);
   padding: 20px;
-  margin-bottom: 50px;
   text-align: center;
-  /* border-bottom: 10px solid #0056b3; */
-  width: 100%; 
-  position: fixed;
-  top: 0;
-  left: 0; 
-  z-index: 1000; 
+  border-bottom: 10px solid #0B35C6;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    position: fixed;
+    width: 200px;
+    right: 0;
+    margin-top: 90px;
+  }
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: #0B35C6;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+header a:hover {
+background-color: #fff;
+color: #0B35C6;
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -35,16 +62,48 @@ main {
   align-items: center; 
 }
 
-.transaction-container {
+.transacao-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 1rem;
+  width: 1280px;
+}
+
+.totais {
+  display: flex;
+  gap: 2rem;
+  color: #09090A;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.entradas {
+  border-left: 8px solid #1ad71e;
+  padding-inline: 8px;
+  border-radius: 8px;
+}
+
+.saidas {
+  border-left: 8px solid #d70000;
+  padding-inline: 8px;
+  border-radius: 8px;
+}
+
+.total {
+  border-left: 8px solid #0B35C6;
+  padding-inline: 8px;
+  border-radius: 8px;
+}
+
+.relatorio {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  gap: 2rem;
-  max-width: 1280px;
 }
 
 table {
-  width: 100%; 
+  width: 600px; 
   border-collapse: collapse; 
   background-color: #2A2A2A; 
   border-radius: 8px;
@@ -60,7 +119,7 @@ th, td {
 }
 
 th {
-  background-color: #007BFF;
+  background-color: #0B35C6;
   color: white; 
   border-radius: 0;
 }
@@ -84,13 +143,18 @@ tr:hover {
   background-color: #FF1E1E;
 }
 
-.total {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 1.5em;
-}
-
 a { 
   text-decoration: none;
   color: inherit;
+}
+
+#success-message {
+  position: fixed;
+  background-color: #1ad71e;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }

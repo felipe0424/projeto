@@ -3,57 +3,30 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  font-family: "Lato", sans-serif;
 }
 
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  background-color: #414141;
+   height: 150px;
+  background-color: #007BFF;
+  margin-bottom: 40px;
+  padding: 16px;
+} */
 
-  & div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20rem;
-    padding: 1rem;
-    margin: auto;
-  }
+h1 {
+  font-weight: 900;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  list-style: none;
-}
+
 
 a {
+  background-color: black;
+  padding: 12px;
+  height: 24rem;
+
   text-decoration: none;
-}
-
-footer {
-  margin: auto;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  & .nav {
-    gap: 20rem;
-    padding: 2rem;
-    margin: auto;
-  }
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  padding: 1rem;
+  color: #fff;
 }

@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1E1E1E; 
+  font-family: "Lato", sans-serif;  
+  /*background-color: #1E1E1E;  */
   color: #E0E0E0; 
   line-height: 1.6;
 }
@@ -19,10 +20,24 @@ main {
 }
 
 header {
-  background-color: #007BFF;
+  background: linear-gradient(90deg, #09090A 0%, #181719 47.57%, #36343B 126.85%, #39363D 126.85%);
   padding: 20px;
   text-align: center;
-  border-bottom: 4px solid #0056b3;
+  border-bottom: 10px solid #0B35C6;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    position: fixed;
+    width: 200px;
+    right: 0;
+    margin-top: 90px;
+  }
 }
 
 header h1 {
@@ -34,10 +49,14 @@ header a {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 1.2em;
+  background-color: #0B35C6;
+  padding: 6px;
+  border-radius: 4px;
 }
 
 header a:hover {
-  text-decoration: underline;
+background-color: #fff;
+color: #0B35C6;
 }
 
 .lancar {
@@ -47,13 +66,14 @@ header a:hover {
 }
 
 #success-message {
-  background-color: green;
+  position: fixed;
+  background-color: #1ad71e;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 30px;
   margin-top: 20px;
-  font-size: smaller;
-  border-radius: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .lancar {
@@ -79,7 +99,7 @@ form select {
 }
 
 form button {
-  background-color: #007BFF;
+  background-color: #0B35C6;
   color: white;
   border: none;
   padding: 10px 15px;
